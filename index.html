@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dholera SIR - India's First Greenfield Smart Industrial City. Premium industrial and residential plots on Delhi-Mumbai Industrial Corridor. Book your free site visit today.">
-    <meta name="keywords" content="Dholera SIR, Dholera Smart City, DMIC plots, Gujarat industrial plots, smart city investment, Dholera residential plots">
-    <title>Dholera SIR - India's First Greenfield Smart Industrial City | Premium Plots</title>
+    <meta name="description" content="Dholera - India's First Greenfield Smart Industrial City. Premium industrial and residential plots on Delhi-Mumbai Industrial Corridor. Book your free site visit today.">
+    <meta name="keywords" content="Dholera , Dholera Smart City, DMIC plots, Gujarat industrial plots, smart city investment, Dholera residential plots">
+    <title>Dholera - India's First Greenfield Smart Industrial City | Premium Plots</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,7 @@
             --white: #ffffff;
             --light-bg: #f7fafc;
             --border-color: #e2e8f0;
+            --whatsapp-green: #25D366;
         }
 
         html {
@@ -75,212 +76,318 @@
             margin-right: auto;
         }
 
-        /* ==================== HERO VIDEO SECTION ==================== */
-        .hero-video-section {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+ /* ==================== HERO VIDEO SECTION ==================== */
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
 
-        .video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
-        .video-container video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                135deg,
-                rgba(0, 0, 0, 0.7) 0%,
-                rgba(0, 0, 0, 0.5) 50%,
-                rgba(0, 0, 0, 0.7) 100%
-            );
-            z-index: 2;
-        }
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 2;
+}
 
-        .hero-content {
-            position: relative;
-            z-index: 3;
-            text-align: center;
-            color: var(--white);
-            max-width: 1200px;
-            padding: 0 20px;
-        }
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: var(--white);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
 
-        .hero-tagline {
-            font-size: 1.2rem;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            animation: fadeInDown 1s ease-out;
-        }
+/* Desktop Layout - Text on Left Side */
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    height: 100%;
+}
 
-        .hero-title {
-            font-size: 4rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-            animation: fadeInUp 1s ease-out 0.3s both;
-        }
+.hero-text-content {
+    text-align: left;
+    padding-right: 40px;
+}
 
-        .hero-subtitle {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-            animation: fadeInUp 1s ease-out 0.6s both;
-        }
+.hero-visual-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .hero-features {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 40px;
-            animation: fadeInUp 1s ease-out 0.9s both;
-        }
+.hero-tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    animation: fadeInLeft 1s ease-out;
+}
 
-        .feature-item {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 15px 25px;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-        }
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    animation: fadeInLeft 1s ease-out 0.3s both;
+}
 
-        .feature-item:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-3px);
-        }
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    animation: fadeInLeft 1s ease-out 0.6s both;
+}
 
-        .hero-cta {
-            animation: fadeInUp 1s ease-out 1.2s both;
-        }
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    animation: fadeInLeft 1s ease-out 0.9s both;
+}
 
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: var(--white);
-            padding: 18px 45px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 50px;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.feature-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
 
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
-        }
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(-5px);
+}
 
-        .cta-button:active {
-            transform: translateY(-2px);
-        }
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeInLeft 1s ease-out 1.2s both;
+}
 
-        .scroll-indicator {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 3;
-            animation: bounce 2s infinite;
-        }
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
 
-        .scroll-indicator span {
-            display: block;
-            width: 30px;
-            height: 50px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            border-radius: 25px;
-            position: relative;
-        }
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+}
 
-        .scroll-indicator span::before {
-            content: '';
-            position: absolute;
-            top: 8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 6px;
-            height: 10px;
-            background: var(--white);
-            border-radius: 10px;
-            animation: scroll 2s infinite;
-        }
+.cta-button:active {
+    transform: translateY(-2px);
+}
 
-        .mute-button {
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            z-index: 4;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: var(--white);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1.5rem;
-        }
+.cta-button.whatsapp {
+    background: linear-gradient(135deg, var(--whatsapp-green) 0%, #128C7E 100%);
+}
 
-        .mute-button:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.1);
-        }
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    animation: bounce 2s infinite;
+}
 
-        .video-loading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 0;
-            color: var(--white);
-            font-size: 1.2rem;
-        }
+.scroll-indicator span {
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    position: relative;
+}
 
-        .loader {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid var(--white);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 15px;
-        }
+.scroll-indicator span::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 10px;
+    background: var(--white);
+    border-radius: 10px;
+    animation: scroll 2s infinite;
+}
 
+.mute-button {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 4;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.mute-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* ==================== MOBILE HERO INFO SECTION ==================== */
+.mobile-hero-info {
+    display: none;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.mobile-hero-info .hero-tagline {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.mobile-hero-info .hero-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.mobile-hero-info .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.mobile-hero-info .hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    animation: fadeInUp 1s ease-out 0.9s both;
+}
+
+.mobile-hero-info .feature-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+}
+
+.mobile-hero-info .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    animation: fadeInUp 1s ease-out 1.2s both;
+}
+
+.mobile-hero-info .cta-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 1rem;
+}
+
+/* Show mobile section only on screens below 1024px */
+@media (max-width: 1024px) {
+    .mobile-hero-info {
+        display: block;
+    }
+    
+    /* Hide text content in hero video on mobile */
+    .hero-text-content {
+        display: none;
+    }
+    
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-visual-content {
+        display: none;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
         /* ==================== INTRO SECTION ==================== */
         .intro-section {
             background: var(--white);
@@ -668,6 +775,188 @@
             font-size: 0.95rem;
         }
 
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ==================== POPUP MODAL ==================== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-container {
+            background: var(--white);
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            padding: 40px 30px;
+            position: relative;
+            transform: translateY(-50px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-overlay.active .modal-container {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--light-bg);
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .modal-close:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: rotate(90deg);
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .modal-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+
+        .modal-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .modal-form .form-control {
+            padding: 14px 18px;
+            font-size: 1rem;
+        }
+
+        .modal-form .submit-button {
+            padding: 16px;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-instant {
+            background: linear-gradient(135deg, var(--whatsapp-green) 0%, #128C7E 100%);
+            color: var(--white);
+            border: none;
+            width: 100%;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .whatsapp-instant:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .modal-divider {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            color: var(--text-light);
+        }
+
+        .modal-divider::before,
+        .modal-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .modal-divider span {
+            padding: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        /* ==================== FLOATING WHATSAPP BUTTON ==================== */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--whatsapp-green);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 5px 30px rgba(37, 211, 102, 0.7);
+            }
+            100% {
+                box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            }
+        }
+
         /* ==================== ANIMATIONS ==================== */
         @keyframes fadeInDown {
             from {
@@ -732,6 +1021,10 @@
             .section-title {
                 font-size: 2.2rem;
             }
+
+            .modal-container {
+                padding: 35px 25px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -761,9 +1054,18 @@
                 font-size: 0.85rem;
             }
 
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
             .cta-button {
                 padding: 15px 35px;
                 font-size: 1rem;
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
             }
 
             .section {
@@ -789,6 +1091,22 @@
             .pricing-table th,
             .pricing-table td {
                 padding: 12px 15px;
+            }
+
+            .modal-container {
+                padding: 30px 20px;
+            }
+
+            .modal-title {
+                font-size: 1.7rem;
+            }
+
+            .floating-whatsapp {
+                width: 55px;
+                height: 55px;
+                font-size: 1.8rem;
+                bottom: 20px;
+                right: 20px;
             }
         }
 
@@ -852,6 +1170,19 @@
             .cta-section p {
                 font-size: 1.1rem;
             }
+
+            .modal-container {
+                width: 95%;
+                padding: 25px 15px;
+            }
+
+            .modal-title {
+                font-size: 1.5rem;
+            }
+
+            .form-container {
+                padding: 25px 15px;
+            }
         }
 
         /* Print styles */
@@ -859,7 +1190,9 @@
             .hero-video-section,
             .scroll-indicator,
             .mute-button,
-            .cta-button {
+            .cta-button,
+            .floating-whatsapp,
+            .modal-overlay {
                 display: none;
             }
         }
@@ -883,7 +1216,7 @@
                 onloadeddata="hideLoader()"
                 onerror="handleVideoError()"
             >
-                <source src=".\video\Home - Dholera.mp4" type="video/mp4">
+                <source src="videos/dholera-hero-video.mp4" type="video/mp4">
                 <source src="videos/dholera-hero-video.webm" type="video/webm">
                 <source src="videos/dholera-hero-video.ogg" type="video/ogg">
                 Your browser does not support the video tag.
@@ -893,19 +1226,28 @@
         <div class="video-overlay"></div>
 
         <div class="hero-content">
-            <div class="hero-tagline">India's First Greenfield Smart Industrial City</div>
-            <h1 class="hero-title">DHOLERA SIR</h1>
-            <div class="hero-subtitle">Premium Industrial & Residential Plots | Delhi-Mumbai Industrial Corridor</div>
-            
-            <div class="hero-features">
-                <div class="feature-item">🏗️ 920 Sq. Km Development</div>
-                <div class="feature-item">✈️ International Airport 2026</div>
-                <div class="feature-item">🚄 DMIC Strategic Location</div>
-                <div class="feature-item">🏭 ₹1 Lakh Cr Investment</div>
-            </div>
+            <div class="hero-wrapper">
+                <div class="hero-text-content">
+                    <div class="hero-tagline">India's First Greenfield Smart Industrial City</div>
+                    <h1 class="hero-title">DHOLERA</h1>
+                    <div class="hero-subtitle">Premium Industrial & Residential Plots | Delhi-Mumbai Industrial Corridor</div>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">🏗️ 920 Sq. Km Development</div>
+                        <div class="feature-item">✈️ International Airport 2026</div>
+                        <div class="feature-item">🚄 DMIC Strategic Location</div>
+                        <div class="feature-item">🏭 ₹1 Lakh Cr Investment</div>
+                    </div>
 
-            <div class="hero-cta">
-                <a href="#contact" class="cta-button">📞 Book Your Free Site Visit</a>
+                    <div class="hero-cta">
+                        <button class="cta-button" onclick="openModal()">📞 Book Your Free Site Visit</button>
+                        <a href="https://wa.me/917903768481?text=Hi,%20I%20want%20instant%20info%20about%20Dholera%20plots" class="cta-button whatsapp" target="_blank" rel="noopener">💬 Get Instant Info on WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual-content">
+                    <!-- Empty column for visual balance -->
+                </div>
             </div>
         </div>
 
@@ -918,6 +1260,27 @@
         </button>
     </section>
 
+    <!-- ==================== MOBILE HERO INFO SECTION ==================== -->
+    <section class="mobile-hero-info">
+        <div class="container">
+            <div class="hero-tagline">India's First Greenfield Smart Industrial City</div>
+            <h2 class="hero-title">DHOLERA</h2>
+            <div class="hero-subtitle">Premium Industrial & Residential Plots | Delhi-Mumbai Industrial Corridor</div>
+            
+            <div class="hero-features">
+                <div class="feature-item">🏗️ 920 Sq. Km Development</div>
+                <div class="feature-item">✈️ International Airport 2026</div>
+                <div class="feature-item">🚄 DMIC Strategic Location</div>
+                <div class="feature-item">🏭 ₹1 Lakh Cr Investment</div>
+            </div>
+
+            <div class="hero-cta">
+                <button class="cta-button" onclick="openModal()">📞 Book Your Free Site Visit</button>
+                <a href="https://wa.me/917903768481?text=Hi,%20I%20want%20instant%20info%20about%20Dholera%20plots" class="cta-button whatsapp" target="_blank" rel="noopener">💬 Get Instant Info on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== INTRO SECTION ==================== -->
     <section class="section intro-section">
         <div class="container">
@@ -925,7 +1288,7 @@
                 <h2 class="section-title">A Strategic Address Where Industry Meets Opportunity</h2>
                 <p class="section-subtitle">Position your business at the forefront of India's industrial revolution</p>
                 <div class="intro-text">
-                    <p>Dholera Special Investment Region (SIR) is a flagship Delhi-Mumbai Industrial Corridor (DMIC) project offering world-class infrastructure, strategic location, and unmatched growth potential. It's India's largest planned smart city with ₹1 lakh crore committed investment, international connectivity, and government-backed infrastructure ready for immediate development.</p>
+                    <p>Dholera Special Investment Region is a flagship Delhi-Mumbai Industrial Corridor (DMIC) project offering world-class infrastructure, strategic location, and unmatched growth potential. It's India's largest planned smart city with ₹1 lakh crore committed investment, international connectivity, and government-backed infrastructure ready for immediate development.</p>
                 </div>
             </div>
         </div>
@@ -934,7 +1297,7 @@
     <!-- ==================== WHY DHOLERA SECTION ==================== -->
     <section class="section why-dholera-section">
         <div class="container">
-            <h2 class="section-title">Why Dholera SIR?</h2>
+            <h2 class="section-title">Why Dholera?</h2>
             <p class="section-subtitle">Discover what makes Dholera India's most promising investment destination</p>
             
             <div class="features-grid">
@@ -1191,11 +1554,11 @@
     <section class="section faq-section">
         <div class="container">
             <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">Get answers to common questions about Dholera SIR investment</p>
+            <p class="section-subtitle">Get answers to common questions about Dholera investment</p>
             
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question">Is Dholera SIR government-approved?</div>
+                    <div class="faq-question">Is Dholera government-approved?</div>
                     <div class="faq-answer">
                         <p>Yes. Dholera is a Delhi-Mumbai Industrial Corridor (DMIC) project overseen by Gujarat Infrastructure Development Board (GIDB), headed by the Hon'ble Chief Minister of Gujarat. DICDL (Dholera Industrial City Development Ltd.) is the implementation agency with 51% equity from Government of Gujarat and 49% from Central Government (NICDIT).</p>
                     </div>
@@ -1218,7 +1581,7 @@
                 <div class="faq-item">
                     <div class="faq-question">Can I book a private site visit?</div>
                     <div class="faq-answer">
-                        <p>Yes. Call or WhatsApp [Your Client's Number] to schedule your guided tour of the Activation Area and available plot inventory. We offer personalized site visits with expert guidance on plot selection and investment strategy.</p>
+                        <p>Yes. Call or WhatsApp +91 7903768481 to schedule your guided tour of the Activation Area and available plot inventory. We offer personalized site visits with expert guidance on plot selection and investment strategy.</p>
                     </div>
                 </div>
 
@@ -1237,42 +1600,57 @@
         <div class="container">
             <h2>Limited Premium Plots Available in Activation Area</h2>
             <p>Reserve Early. Choose the Finest Inventory. Secure Your Future.</p>
-            <a href="#contact" class="cta-button">📞 Schedule Your Private Site Visit Today</a>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <button class="cta-button" onclick="openModal('site-visit')">📞 Schedule Your Private Site Visit Today</button>
+                <a href="https://wa.me/917903768481?text=Hi,%20I%20want%20instant%20info%20about%20Dholera%20plots" class="cta-button whatsapp" target="_blank">💬 Get Instant Info on WhatsApp</a>
+            </div>
         </div>
     </section>
 
-    <!-- ==================== LEAD FORM SECTION ==================== -->
+        <!-- ==================== LEAD FORM SECTION ==================== -->
     <section class="section lead-form-section" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <p class="section-subtitle">Fill out the form below and our team will contact you within 24 hours</p>
             
             <div class="form-container">
-                <form id="leadForm" onsubmit="handleSubmit(event)">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="a73e3a87-2bd3-40b6-9a3b-9f19d847aebf">
+                    
+                    <!-- Email Subject -->
+                    <input type="hidden" name="subject" value="New Dholera SIR Lead!">
+                    
+                    <!-- Redirect to thank you page (optional) -->
+                    <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html"> -->
+                    
+                    <!-- Disable CAPTCHA (optional) -->
+                    <input type="hidden" name="skip_email_verification" value="1">
+                    
                     <div class="form-row">
                         <div class="form-group">
                             <label for="fullName">Full Name *</label>
-                            <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Enter your full name">
+                            <input type="text" id="fullName" name="Full Name" class="form-control" required placeholder="Enter your full name">
                         </div>
                         <div class="form-group">
                             <label for="mobile">Mobile Number *</label>
-                            <input type="tel" id="mobile" name="mobile" class="form-control" required placeholder="Enter your mobile number" pattern="[0-9]{10}">
+                            <input type="tel" id="mobile" name="Mobile Number" class="form-control" required placeholder="Enter your mobile number" pattern="[0-9]{10}">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email (Optional)</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address">
+                        <input type="email" id="email" name="Email" class="form-control" placeholder="Enter your email address">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="city">City *</label>
-                            <input type="text" id="city" name="city" class="form-control" required placeholder="Enter your city">
+                            <input type="text" id="city" name="City" class="form-control" required placeholder="Enter your city">
                         </div>
                         <div class="form-group">
                             <label for="purpose">Purpose *</label>
-                            <select id="purpose" name="purpose" class="form-control" required>
+                            <select id="purpose" name="Purpose" class="form-control" required>
                                 <option value="">Select your purpose</option>
                                 <option value="Industrial Investment">Industrial Investment</option>
                                 <option value="Residential Plot">Residential Plot</option>
@@ -1285,7 +1663,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="budget">Budget *</label>
-                            <select id="budget" name="budget" class="form-control" required>
+                            <select id="budget" name="Budget" class="form-control" required>
                                 <option value="">Select your budget</option>
                                 <option value="Below ₹10L">Below ₹10L</option>
                                 <option value="₹10L–₹50L">₹10L–₹50L</option>
@@ -1295,7 +1673,7 @@
                         </div>
                         <div class="form-group">
                             <label for="plotSize">Preferred Plot Size *</label>
-                            <select id="plotSize" name="plotSize" class="form-control" required>
+                            <select id="plotSize" name="Plot Size" class="form-control" required>
                                 <option value="">Select plot size</option>
                                 <option value="97–300 Sq.Yd.">97–300 Sq.Yd.</option>
                                 <option value="300–600 Sq.Yd.">300–600 Sq.Yd.</option>
@@ -1306,7 +1684,7 @@
 
                     <div class="form-group">
                         <label for="siteVisit">Preferred Site Visit *</label>
-                        <select id="siteVisit" name="siteVisit" class="form-control" required>
+                        <select id="siteVisit" name="Site Visit Preference" class="form-control" required>
                             <option value="">Select timing</option>
                             <option value="This Weekend">This Weekend</option>
                             <option value="Within 15 Days">Within 15 Days</option>
@@ -1314,29 +1692,83 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="interestArea">Interest Area *</label>
-                        <select id="interestArea" name="interestArea" class="form-control" required>
-                            <option value="">Select area</option>
-                            <option value="Activation Area Zone A">Activation Area Zone A</option>
-                            <option value="Airport Zone B">Airport Zone B</option>
-                            <option value="Outer Zones">Outer Zones</option>
-                        </select>
-                    </div>
-
                     <button type="submit" class="submit-button">📞 Book Your Free Site Visit</button>
+                    
+                    <div class="modal-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <a href="https://wa.me/917903768481?text=Hi,%20I%20want%20instant%20info%20about%20Dholera%20SIR%20plots" class="whatsapp-instant" target="_blank">
+                        💬 Get Instant Info on WhatsApp
+                    </a>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
+    <!-- ==================== FOOTER ==================== -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Dholera SIR. All rights reserved. | Information sourced from official government sources.</p>
-            <p style="margin-top: 10px; font-size: 0.85rem;">Disclaimer: This is an informational website. Please verify all details with official authorities before making investment decisions.</p>
+            <p>&copy; 2026 Dholera SIR. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">
+                WhatsApp: <a href="https://wa.me/917903768481" target="_blank">+91 7903768481</a> | 
+                Email: <a href="mailto:prodigiwaveofficial@gmail.com">prodigiwaveofficial@gmail.com</a>
+            </p>
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.2); font-size: 0.75rem; opacity: 0.7; line-height: 1.6;">
+                <p><strong>Disclaimer:</strong> This landing page is created solely for advertising and marketing purposes. The information and content presented are for general promotional purposes and are inspired by publicly available information from the Dholera SIR Government Portal. Information should be independently verified before making any investment or purchase decision.</p>
+            </div>
         </div>
     </footer>
+
+     <!-- ==================== POPUP MODAL ==================== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3 class="modal-title">Get Instant Info</h3>
+            <p class="modal-subtitle">Fill in your details and we'll contact you within 24 hours</p>
+            
+            <form class="modal-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="a73e3a87-2bd3-40b6-9a3b-9f19d847aebf">
+                
+                <!-- Email Subject -->
+                <input type="hidden" name="subject" value="New Dholera Lead - Popup!">
+                
+                <!-- Anti-spam -->
+                <input type="checkbox" name="botcheck" style="display: none;">
+                
+                <div class="form-group">
+                    <label for="popupName">Full Name *</label>
+                    <input type="text" id="popupName" name="Full Name" class="form-control" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="popupMobile">Mobile Number *</label>
+                    <input type="tel" id="popupMobile" name="Mobile Number" class="form-control" required placeholder="Enter your mobile number" pattern="[0-9]{10}">
+                </div>
+
+                <div class="form-group">
+                    <label for="popupCity">City *</label>
+                    <input type="text" id="popupCity" name="City" class="form-control" required placeholder="Enter your city">
+                </div>
+
+                <button type="submit" class="submit-button">📞 Request Callback</button>
+                
+                <div class="modal-divider">
+                    <span>OR GET INSTANT INFO</span>
+                </div>
+                
+                <a href="https://wa.me/917903768481?text=Hi,%20I%20want%20instant%20info%20about%20Dholera%20plots" class="whatsapp-instant" target="_blank">
+                    💬 Chat on WhatsApp
+                </a>
+            </form>
+        </div>
+    </div>
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="https://wa.me/917903768481?text=Hi,%20I%20want%20instant%20info%20about%20Dholera%20plots" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+        💬
+    </a>
 
     <!-- ==================== JAVASCRIPT ==================== -->
     <script>
@@ -1364,6 +1796,33 @@
                 muteButton.innerHTML = '🔇';
             }
         }
+
+        // Modal functions
+        function openModal(type) {
+            const modal = document.getElementById('modalOverlay');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modalOverlay');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
 
         // Ensure video plays on mobile devices
         document.addEventListener('DOMContentLoaded', function() {
@@ -1416,7 +1875,7 @@
             });
         });
 
-        // Form submission handler
+        // Main form submission handler
         function handleSubmit(event) {
             event.preventDefault();
             
@@ -1432,8 +1891,7 @@
                 purpose: formData.get('purpose'),
                 budget: formData.get('budget'),
                 plotSize: formData.get('plotSize'),
-                siteVisit: formData.get('siteVisit'),
-                interestArea: formData.get('interestArea')
+                siteVisit: formData.get('siteVisit')
             };
             
             // Here you would typically send the data to your server
@@ -1444,36 +1902,46 @@
             
             // Reset form
             form.reset();
-            
-            // In production, replace the alert with actual API call:
-            // fetch('/api/submit-lead', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify(data)
-            // })
-            // .then(response => response.json())
-            // .then(result => {
-            //     alert('Thank you! We will contact you soon.');
-            //     form.reset();
-            // })
-            // .catch(error => {
-            //     console.error('Error:', error);
-            //     alert('Something went wrong. Please try again.');
-            // });
         }
 
-        // Add scroll effect to navbar (if you add one later)
-        window.addEventListener('scroll', function() {
-            const scrollPosition = window.scrollY;
-            
-            // You can add navbar styling changes here
-            if (scrollPosition > 100) {
-                // Add scrolled class to navbar
-                document.body.classList.add('scrolled');
-            } else {
-                document.body.classList.remove('scrolled');
-            }
-        });
+// Add scroll effect to navbar
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    
+    if (scrollPosition > 100) {
+        document.body.classList.add('scrolled');
+    } else {
+        document.body.classList.remove('scrolled');
+    }
+});
+
+// Auto-trigger popup: 5 seconds OR 50% scroll (whichever happens first, once per session)
+document.addEventListener('DOMContentLoaded', function() {
+    let popupOpened = false;
+    
+    // Function to open popup (only if not already opened)
+    function tryOpenPopup() {
+        if (!popupOpened && !sessionStorage.getItem('popupShown')) {
+            popupOpened = true;
+            sessionStorage.setItem('popupShown', 'true');
+            openModal();
+        }
+    }
+    
+    // Trigger 1: Open after 5 seconds
+    setTimeout(function() {
+        tryOpenPopup();
+    }, 5000);
+    
+    // Trigger 2: Open when user scrolls 50% down
+    window.addEventListener('scroll', function() {
+        const scrollPercentage = (window.scrollY + window.innerHeight) / document.body.scrollHeight;
+        
+        if (scrollPercentage > 0.5) {
+            tryOpenPopup();
+        }
+    });
+});
     </script>
 </body>
 </html>
